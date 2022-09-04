@@ -11,9 +11,6 @@
 
 
 class Unit:
-    """Тупо взял солюшн, но мне не нравится. Мы не прописали set_unit и state.
-    Можно попробовать прописать, но для абстрактной задачи слишком замороченно получается.
-    """
 
     def __init__(self):
         pass
@@ -31,8 +28,6 @@ class Unit:
             self.field.set_unit(y=self.y, x=self.x + speed, unit=self)
 
     def _get_speed(self):
-        """Для state надо метод писать, который будет принимать is_fly или crowl и сможет его менять.
-        """
         if self.state == 'fly':
             return self.speed * 1.2
         elif self.state == 'crawl':
